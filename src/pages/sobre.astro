@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+---
+
+<Layout title="Sobre Nós - Barbearia Estilo">
+	<section class="page-header">
+		<div class="container">
+			<h1>Sobre Nós</h1>
+			<p>Conheça a história e a equipe da Barbearia Estilo</p>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-text">
+					<SectionTitle 
+						title="Nossa História" 
+						subtitle="Uma trajetória de dedicação e excelência no cuidado masculino."
+					/>
+					<p>
+						Fundada em 2010, a Barbearia Estilo nasceu do sonho de criar um espaço onde os homens pudessem cuidar da aparência com qualidade e conforto. O que começou como uma pequena barbearia com apenas duas cadeiras, hoje se tornou referência na cidade.
+					</p>
+					<p>
+						Ao longo desses anos, mantivemos nossa essência: combinar técnicas tradicionais de barbearia com as tendências modernas, sempre priorizando a satisfação dos nossos clientes.
+					</p>
+					<p>
+						Nossa filosofia é simples: oferecer mais que cortes de cabelo e barba, proporcionamos uma experiência completa de cuidado masculino em um ambiente acolhedor e descontraído.
+					</p>
+				</div>
+				<div class="about-image">
+					<img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Interior da Barbearia Estilo" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="values">
+		<div class="container">
+			<SectionTitle 
+				title="Nossos Valores" 
+				subtitle="Princípios que guiam nosso trabalho todos os dias."
+				centered={true}
+			/>
+			
+			<div class="values-grid">
+				<div class="value-card">
+					<div class="value-icon">🌟</div>
+					<h3>Excelência</h3>
+					<p>Buscamos a perfeição em cada corte, em cada atendimento, em cada detalhe.</p>
+				</div>
+				
+				<div class="value-card">
+					<div class="value-icon">🤝</div>
+					<h3>Respeito</h3>
+					<p>Valorizamos cada cliente, entendendo suas necessidades e preferências individuais.</p>
+				</div>
+				
+				<div class="value-card">
+					<div class="value-icon">📚</div>
+					<h3>Aprendizado</h3>
+					<p>Investimos constantemente na atualização e aperfeiçoamento da nossa equipe.</p>
+				</div>
+				
+				<div class="value-card">
+					<div class="value-icon">♻️</div>
+					<h3>Sustentabilidade</h3>
+					<p>Comprometidos com práticas sustentáveis e produtos que respeitam o meio ambiente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<div class="container">
+			<SectionTitle 
+				title="Nossa Equipe" 
+				subtitle="Conheça os profissionais que fazem da Barbearia Estilo um lugar especial."
+				centered={true}
+			/>
+			
+			<div class="team-grid">
+				<div class="team-member">
+					<div class="member-image">
+						<img src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Foto de Carlos" />
+					</div>
+					<h3>Carlos Oliveira</h3>
+					<p class="member-role">Fundador e Barbeiro Master</p>
+					<p class="member-bio">Com mais de 20 anos de experiência, Carlos é especialista em cortes clássicos e barbas tradicionais.</p>
+				</div>
+				
+				<div class="team-member">
+					<div class="member-image">
+						<img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80" alt="Foto de Rafael" />
+					</div>
+					<h3>Rafael Santos</h3>
+					<p class="member-role">Barbeiro Sênior</p>
+					<p class="member-bio">Especialista em cortes modernos e degradês, Rafael traz as últimas tendências para a barbearia.</p>
+				</div>
+				
+				<div class="team-member">
+					<div class="member-image">
+						<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Foto de André" />
+					</div>
+					<h3>André Lima</h3>
+					<p class="member-role">Barbeiro</p>
+					<p class="member-bio">Com um talento natural para desenhos e acabamentos, André é o especialista em estilos personalizados.</p>
+				</div>
+				
+				<div class="team-member">
+					<div class="member-image">
+						<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Foto de Marcos" />
+					</div>
+					<h3>Marcos Pereira</h3>
+					<p class="member-role">Barbeiro</p>
+					<p class="member-bio">O mais novo da equipe, Marcos traz frescor e novas ideias com sua criatividade e técnica apurada.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<div class="cta-content">
+				<h2>Venha nos conhecer!</h2>
+				<p>Experimente o atendimento diferenciado da Barbearia Estilo.</p>
+				<a href="/contato" class="btn btn-large">Agendar Horário</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background-color: var(--color-secondary);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+	
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header p {
+		font-size: 1.2rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+	}
+	
+	.about {
+		padding: 5rem 0;
+		background-color: white;
+	}
+	
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+	
+	.about-text p {
+		margin-bottom: 1.5rem;
+		line-height: 1.7;
+	}
+	
+	.about-image {
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+	}
+	
+	.values {
+		padding: 5rem 0;
+		background-color: #f9f9f9;
+	}
+	
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+	
+	.value-card {
+		background-color: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		text-align: center;
+		transition: transform 0.3s ease;
+	}
+	
+	.value-card:hover {
+		transform: translateY(-10px);
+	}
+	
+	.value-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.value-card h3 {
+		color: var(--color-secondary);
+		margin-bottom: 1rem;
+		font-size: 1.3rem;
+	}
+	
+	.team {
+		padding: 5rem 0;
+		background-color: white;
+	}
+	
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2.5rem;
+		margin-top: 3rem;
+	}
+	
+	.team-member {
+		text-align: center;
+	}
+	
+	.member-image {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 1.5rem;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	}
+	
+	.member-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	.team-member h3 {
+		color: var(--color-secondary);
+		margin-bottom: 0.5rem;
+		font-size: 1.3rem;
+	}
+	
+	.member-role {
+		color: var(--color-primary);
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+	
+	.member-bio {
+		color: #666;
+		line-height: 1.6;
+	}
+	
+	.cta {
+		padding: 5rem 0;
+		background-color: var(--color-primary);
+		color: white;
+	}
+	
+	.cta-content {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+	
+	.btn-large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+		background-color: var(--color-secondary);
+	}
+	
+	.btn-large:hover {
+		background-color: #1a1a1a;
+	}
+	
+	@media (max-width: 992px) {
+		.team-grid {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.about-content {
+			grid-template-columns: 1fr;
+		}
+		
+		.about-image {
+			order: -1;
+		}
+		
+		.page-header h1 {
+			font-size: 2.5rem;
+		}
+		
+		.cta h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<Layout title="Serviços - Barbearia Estilo">
+	<section class="page-header">
+		<div class="container">
+			<h1>Nossos Serviços</h1>
+			<p>Conheça todos os serviços oferecidos pela Barbearia Estilo</p>
+		</div>
+	</section>
+
+	<section class="services">
+		<div class="container">
+			<SectionTitle 
+				title="Cortes de Cabelo" 
+				subtitle="Nossos cortes são realizados por profissionais experientes e atualizados com as últimas tendências."
+			/>
+			
+			<div class="services-grid">
+				<ServiceCard 
+					title="Corte Clássico" 
+					price="R$ 35,00" 
+					description="Corte tradicional com acabamento perfeito, inclui lavagem e finalização."
+					icon="✂️"
+				/>
+				<ServiceCard 
+					title="Corte Degradê" 
+					price="R$ 40,00" 
+					description="Técnica moderna com transição suave entre diferentes comprimentos."
+					icon="✂️"
+				/>
+				<ServiceCard 
+					title="Corte Navalhado" 
+					price="R$ 45,00" 
+					description="Acabamento especial com navalha para um visual mais definido."
+					icon="✂️"
+				/>
+				<ServiceCard 
+					title="Corte Infantil" 
+					price="R$ 30,00" 
+					description="Corte especial para crianças até 12 anos."
+					icon="✂️"
+				/>
+			</div>
+			
+			<SectionTitle 
+				title="Barba" 
+				subtitle="Cuidados especiais para sua barba, com produtos de alta qualidade."
+				class="mt-5"
+			/>
+			
+			<div class="services-grid">
+				<ServiceCard 
+					title="Barba Completa" 
+					price="R$ 25,00" 
+					description="Modelagem, hidratação e finalização da barba com produtos premium."
+					icon="🪒"
+				/>
+				<ServiceCard 
+					title="Barba Simples" 
+					price="R$ 20,00" 
+					description="Aparar e modelar a barba mantendo o estilo atual."
+					icon="🪒"
+				/>
+				<ServiceCard 
+					title="Barba + Hidratação" 
+					price="R$ 35,00" 
+					description="Tratamento completo com hidratação profunda para barba."
+					icon="🪒"
+				/>
+			</div>
+			
+			<SectionTitle 
+				title="Combos e Pacotes" 
+				subtitle="Economize com nossos pacotes especiais."
+				class="mt-5"
+			/>
+			
+			<div class="services-grid">
+				<ServiceCard 
+					title="Combo Corte + Barba" 
+					price="R$ 55,00" 
+					description="Nosso serviço mais popular. Corte e barba com desconto especial."
+					icon="👑"
+				/>
+				<ServiceCard 
+					title="Pacote Mensal" 
+					price="R$ 150,00" 
+					description="4 cortes por mês. Ideal para quem gosta de manter o visual sempre impecável."
+					icon="📅"
+				/>
+				<ServiceCard 
+					title="Pacote Pai e Filho" 
+					price="R$ 60,00" 
+					description="Corte para pai e filho (até 12 anos) com preço especial."
+					icon="👨‍👦"
+				/>
+			</div>
+			
+			<SectionTitle 
+				title="Serviços Adicionais" 
+				subtitle="Complementos para melhorar ainda mais sua experiência."
+				class="mt-5"
+			/>
+			
+			<div class="services-grid">
+				<ServiceCard 
+					title="Sobrancelha" 
+					price="R$ 15,00" 
+					description="Modelagem e alinhamento de sobrancelhas."
+					icon="👁️"
+				/>
+				<ServiceCard 
+					title="Massagem Facial" 
+					price="R$ 30,00" 
+					description="Relaxe com uma massagem facial revitalizante."
+					icon="💆‍♂️"
+				/>
+				<ServiceCard 
+					title="Hidratação Capilar" 
+					price="R$ 25,00" 
+					description="Tratamento profundo para cabelos ressecados ou danificados."
+					icon="💧"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<div class="cta-content">
+				<h2>Pronto para agendar seu horário?</h2>
+				<p>Entre em contato conosco e garanta o melhor atendimento para o seu estilo.</p>
+				<a href="/contato" class="btn btn-large">Agendar Agora</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background-color: var(--color-secondary);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+	
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header p {
+		font-size: 1.2rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+	}
+	
+	.services {
+		padding: 5rem 0;
+		background-color: var(--color-light);
+	}
+	
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+	
+	.mt-5 {
+		margin-top: 5rem;
+	}
+	
+	.cta {
+		padding: 5rem 0;
+		background-color: var(--color-primary);
+		color: white;
+	}
+	
+	.cta-content {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+	
+	.btn-large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+		background-color: var(--color-secondary);
+	}
+	
+	.btn-large:hover {
+		background-color: #1a1a1a;
+	}
+	
+	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2.5rem;
+		}
+		
+		.cta h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

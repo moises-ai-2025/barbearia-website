@@ -1,0 +1,149 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Gallery from '../components/Gallery.astro';
+---
+
+<Layout title="Galeria - Barbearia Estilo">
+	<section class="page-header">
+		<div class="container">
+			<h1>Galeria</h1>
+			<p>Confira alguns dos nossos melhores trabalhos</p>
+		</div>
+	</section>
+
+	<section class="gallery-section">
+		<div class="container">
+			<SectionTitle 
+				title="Cortes de Cabelo" 
+				subtitle="Uma seleção dos nossos melhores cortes masculinos."
+			/>
+			
+			<Gallery 
+				images={[
+					{ src: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80", alt: "Corte masculino moderno" },
+					{ src: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Corte degradê" },
+					{ src: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80", alt: "Corte clássico" },
+					{ src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Corte moderno" },
+					{ src: "https://images.unsplash.com/photo-1567894340315-735d7c361db0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Corte estilizado" },
+					{ src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Corte tradicional" },
+				]}
+			/>
+			
+			<SectionTitle 
+				title="Barbas" 
+				subtitle="Modelagens e cuidados com a barba que transformam o visual."
+				class="mt-5"
+			/>
+			
+			<Gallery 
+				images={[
+					{ src: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80", alt: "Barba bem cuidada" },
+					{ src: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=699&q=80", alt: "Barba estilizada" },
+					{ src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80", alt: "Barba curta" },
+					{ src: "https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80", alt: "Barba longa" },
+				]}
+			/>
+			
+			<SectionTitle 
+				title="Nossa Barbearia" 
+				subtitle="Conheça nosso espaço, projetado para oferecer conforto e estilo."
+				class="mt-5"
+			/>
+			
+			<Gallery 
+				images={[
+					{ src: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80", alt: "Interior da barbearia" },
+					{ src: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Cadeiras de barbeiro" },
+					{ src: "https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Ambiente da barbearia" },
+					{ src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Produtos de barbearia" },
+					{ src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Ferramentas de barbeiro" },
+					{ src: "https://images.unsplash.com/photo-1626015449158-2a9a1333e5a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80", alt: "Recepção da barbearia" },
+				]}
+			/>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<div class="cta-content">
+				<h2>Gostou do que viu?</h2>
+				<p>Venha fazer parte da nossa galeria com um visual renovado!</p>
+				<a href="/contato" class="btn btn-large">Agendar Horário</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background-color: var(--color-secondary);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+	
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header p {
+		font-size: 1.2rem;
+		max-width: 700px;
+		margin: 0 auto;
+		opacity: 0.9;
+	}
+	
+	.gallery-section {
+		padding: 5rem 0;
+		background-color: var(--color-light);
+	}
+	
+	.mt-5 {
+		margin-top: 5rem;
+	}
+	
+	.cta {
+		padding: 5rem 0;
+		background-color: var(--color-primary);
+		color: white;
+	}
+	
+	.cta-content {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+	
+	.btn-large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+		background-color: var(--color-secondary);
+	}
+	
+	.btn-large:hover {
+		background-color: #1a1a1a;
+	}
+	
+	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2.5rem;
+		}
+		
+		.cta h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

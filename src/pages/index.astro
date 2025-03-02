@@ -1,0 +1,284 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Testimonial from '../components/Testimonial.astro';
+---
+
+<Layout title="Barbearia Estilo - Cortes modernos e tradicionais">
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Barbearia Estilo</h1>
+			<p>Tradição e modernidade em cada corte</p>
+			<div class="hero-buttons">
+				<a href="/contato" class="btn">Agendar Horário</a>
+				<a href="/servicos" class="btn btn-outline">Nossos Serviços</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-preview">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-text">
+					<SectionTitle 
+						title="Sobre Nós" 
+						subtitle="Há mais de 10 anos oferecendo o melhor em cortes masculinos e cuidados com a barba."
+					/>
+					<p>
+						Na Barbearia Estilo, combinamos técnicas tradicionais com tendências modernas para proporcionar a melhor experiência aos nossos clientes. Nossa equipe de barbeiros experientes está sempre atualizada com as últimas tendências.
+					</p>
+					<a href="/sobre" class="btn">Conheça Nossa História</a>
+				</div>
+				<div class="about-image">
+					<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Interior da Barbearia Estilo" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services-preview">
+		<div class="container">
+			<SectionTitle 
+				title="Nossos Serviços" 
+				subtitle="Oferecemos uma variedade de serviços para cuidar do seu visual com excelência."
+				centered={true}
+			/>
+			
+			<div class="services-grid">
+				<ServiceCard 
+					title="Corte Clássico" 
+					price="R$ 35,00" 
+					description="Corte tradicional com acabamento perfeito, inclui lavagem e finalização."
+					icon="✂️"
+				/>
+				<ServiceCard 
+					title="Barba Completa" 
+					price="R$ 25,00" 
+					description="Modelagem, hidratação e finalização da barba com produtos premium."
+					icon="🪒"
+				/>
+				<ServiceCard 
+					title="Combo Corte + Barba" 
+					price="R$ 55,00" 
+					description="Nosso serviço mais popular. Corte e barba com desconto especial."
+					icon="👑"
+				/>
+			</div>
+			
+			<div class="services-cta">
+				<a href="/servicos" class="btn">Ver Todos os Serviços</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="container">
+			<SectionTitle 
+				title="Depoimentos" 
+				subtitle="O que nossos clientes dizem sobre nós"
+				centered={true}
+			/>
+			
+			<div class="testimonials-grid">
+				<Testimonial 
+					name="João Silva" 
+					text="Melhor barbearia da cidade! Atendimento excelente e cortes impecáveis. Recomendo a todos."
+					rating={5}
+				/>
+				<Testimonial 
+					name="Carlos Oliveira" 
+					text="Ambiente agradável e profissionais muito competentes. Minha barba nunca esteve tão bem cuidada."
+					rating={5}
+				/>
+				<Testimonial 
+					name="Pedro Santos" 
+					text="Preço justo e qualidade excepcional. Virei cliente fiel depois da primeira visita."
+					rating={4}
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta">
+		<div class="container">
+			<div class="cta-content">
+				<h2>Pronto para renovar seu visual?</h2>
+				<p>Agende seu horário agora mesmo e experimente o melhor serviço de barbearia da cidade.</p>
+				<a href="/contato" class="btn btn-large">Agendar Horário</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* Hero Section */
+	.hero {
+		height: 80vh;
+		min-height: 500px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: white;
+	}
+	
+	.hero-content {
+		max-width: 800px;
+		padding: 0 1rem;
+	}
+	
+	.hero h1 {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+	
+	.hero p {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	}
+	
+	.hero-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+	}
+	
+	.btn-outline {
+		background-color: transparent;
+		border: 2px solid var(--color-primary);
+	}
+	
+	.btn-outline:hover {
+		background-color: var(--color-primary);
+	}
+	
+	/* About Preview Section */
+	.about-preview {
+		padding: 5rem 0;
+		background-color: white;
+	}
+	
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+	
+	.about-text p {
+		margin-bottom: 2rem;
+		line-height: 1.7;
+	}
+	
+	.about-image {
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+	}
+	
+	/* Services Preview Section */
+	.services-preview {
+		padding: 5rem 0;
+		background-color: #f9f9f9;
+	}
+	
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+	
+	.services-cta {
+		text-align: center;
+	}
+	
+	/* Testimonials Section */
+	.testimonials {
+		padding: 5rem 0;
+		background-color: white;
+	}
+	
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	
+	/* CTA Section */
+	.cta {
+		padding: 5rem 0;
+		background-color: var(--color-secondary);
+		color: white;
+	}
+	
+	.cta-content {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+	
+	.btn-large {
+		padding: 1rem 2rem;
+		font-size: 1.1rem;
+	}
+	
+	/* Responsive */
+	@media (max-width: 992px) {
+		.hero h1 {
+			font-size: 3rem;
+		}
+		
+		.hero p {
+			font-size: 1.3rem;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.about-content {
+			grid-template-columns: 1fr;
+		}
+		
+		.about-image {
+			order: -1;
+		}
+		
+		.hero-buttons {
+			flex-direction: column;
+			max-width: 300px;
+			margin: 0 auto;
+		}
+	}
+	
+	@media (max-width: 576px) {
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+		
+		.hero p {
+			font-size: 1.1rem;
+		}
+		
+		.cta h2 {
+			font-size: 2rem;
+		}
+	}
+</style>

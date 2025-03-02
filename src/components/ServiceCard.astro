@@ -1,0 +1,96 @@
+---
+interface Props {
+  title: string;
+  price: string;
+  description: string;
+  icon?: string;
+}
+
+const { title, price, description, icon = "✂️" } = Astro.props;
+---
+
+<div class="service-card">
+  <div class="service-icon">
+    <span>{icon}</span>
+  </div>
+  <div class="service-content">
+    <div class="service-header">
+      <h3>{title}</h3>
+      <span class="service-price">{price}</span>
+    </div>
+    <p>{description}</p>
+  </div>
+</div>
+
+<style>
+  .service-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .service-content {
+    flex: 1;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+  
+  .service-price {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+  }
+  
+  .service-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 576px) {
+    .service-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .service-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>
